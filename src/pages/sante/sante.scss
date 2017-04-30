@@ -1,0 +1,50 @@
+page-sante {
+
+  .img_sante {
+    width: 50%;
+    height: 50%;
+    float: right;
+  }
+
+  .img_medical {
+    width: 100%;
+    height: 100%;
+  }
+
+  ion-card-header {
+    background: darkorange;
+  }
+
+  ion-card-header h2 {
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+  }
+
+  ion-card {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  ion-card-content {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .lien_sante {
+    color: orangered;
+    text-decoration: none;
+  }
+
+  /*ion-row button {
+    color: orangered;
+  }*/
+
+  ion-row {
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+
+}

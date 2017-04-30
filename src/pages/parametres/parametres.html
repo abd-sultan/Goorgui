@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar primary>
+        <ion-buttons start>
+        </ion-buttons>
+        <ion-title style="text-align:center">Gorgui</ion-title>
+
+        <ion-buttons end>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-item-group>
+        <ion-item-divider class="titre">Notifications</ion-item-divider>
+        <ion-item class="contenu">
+            <ion-label>Notifications paiements disponibles</ion-label>
+            <ion-toggle checked="true" color="goorgui"></ion-toggle>
+        </ion-item>
+        <ion-item class="contenu">
+            <ion-label>Notifications silencieuse</ion-label>
+            <ion-toggle checked="false" color="goorgui"></ion-toggle>
+        </ion-item>
+        <ion-item class="contenu">
+            <ion-label>Volume des notifications</ion-label>
+            <ion-range [(ngModel)]="volume" color="goorgui">
+                <ion-icon range-left small name="volume-off"></ion-icon>
+                <ion-icon range-right name="volume-up"></ion-icon>
+            </ion-range>
+        </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider class="titre">Rappels</ion-item-divider>
+        <ion-item class="contenu">
+            <ion-label>Durée des rappels</ion-label>
+            <ion-select [(ngModel)]="dureeAppel" color="goorgui">
+                <ion-option value="parJour">Chaque jour</ion-option>
+                <ion-option value="parSemaine" selected="true">Chaque semaine</ion-option>
+                <ion-option value="parMois">Chaque mois</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider class="titre">Historique des transactions</ion-item-divider>
+        <ion-item class="contenu">
+            <ion-label>Afficher les transactions datant de : </ion-label>
+            <ion-select [(ngModel)]="dureeTrans" color="goorgui">
+                <ion-option value="parJour" selected="true">1 mois</ion-option>
+                <ion-option value="parSemaine">6 mois</ion-option>
+                <ion-option value="parMois">1 an</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider class="titre">Actualités</ion-item-divider>
+        <ion-item class="contenu">
+            <ion-label>Afficher les actualités</ion-label>
+            <ion-toggle checked="true" color="goorgui"></ion-toggle>
+        </ion-item>
+    </ion-item-group>
+
+</ion-content>

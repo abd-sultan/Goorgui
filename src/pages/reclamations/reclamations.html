@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar primary>
+        <ion-buttons start>
+        </ion-buttons>
+        <ion-title style="text-align:center">Gorgui</ion-title>
+
+        <ion-buttons end>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h2>Informations</h2>
+    <p>
+        Les réclamations vous permettent de nous faire part de vos éventuels problèmes ou difficultés
+        rencontrées avec l'application. Elles seront directement prises en compte par notre équipe et
+        traitées dans les meilleurs délais.<br>
+        Choisissez le type de réclamation à faire et décrivez en quelques lignes la situation de maniére
+        claire et concise.<br>
+        Assurez-vous de vérifier que votre probléme n'est pas répétorié dans notre <a href="#">faq.</a>
+    </p>
+
+    <ion-fab right bottom class="icon_message">
+        <button ion-fab color="goorgui" class="btn_message" (click)="ecrireRecla()"><ion-icon name="mail"></ion-icon></button>
+    </ion-fab>
+</ion-content>

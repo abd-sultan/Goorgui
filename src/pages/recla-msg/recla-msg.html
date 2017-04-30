@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ReclaMsg page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons start>
+    </ion-buttons>
+    <ion-title style="text-align:center">Goorgui</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list radio-group [(ngModel)]="typeRecla">
+    <ion-item-group class="liste">
+      <ion-item-divider class="titre">Types de réclamations</ion-item-divider>
+      <ion-item>
+        <ion-label>Je ne reçois pas les notifications</ion-label>
+        <ion-radio color="goorgui" [value]="notif">1</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Problémes avec mon compte IPRES</ion-label>
+        <ion-radio color="goorgui" [value]="ipres">2</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>L'application bug</ion-label>
+        <ion-radio color="goorgui" [value]="bugs">3</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Autres</ion-label>
+        <ion-radio color="goorgui" [value]="autres">4</ion-radio>
+      </ion-item>
+    </ion-item-group>
+    <ion-item>
+      <button ion-button large full color="goorgui" (click)="envoyerRecla()">Envoyer</button>
+      <button ion-button small color="dark" style="float: right" (click)="annulerRecla()">Annuler</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
